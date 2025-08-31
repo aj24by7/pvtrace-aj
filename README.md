@@ -1,11 +1,9 @@
-# pvtrace-sv
+# pvtrace-aj
 
-Modifications made to Daniel Farrell's pvTrace (https://github.com/danieljfarrell/pvtrace) to allow analysis of unconventional LSC geometries.
+Modifications were made to Shomik Verma's pvtrace (https://github.com/shomikverma/pvtrace-sv) to allow light to come in at incident angles and to simulate ray-tracing for unique geometries.
 
-Added surface normal recording in photon-tracer.
+To use, replace the contents of the installed pvtrace (i.e. for MacOS under ~/opt/anaconda3/envs/pvtrace-env/lib/python3/site-packages/pvtrace/) with the contents of this repository.
 
-To use, replace the contents of the installed pvtrace (i.e. for MacOS under ~/opt/anaconda3/envs/pvtrace-env/lib/python3/site-packages/pvtrace/) with the contents of pvtrace-v2.1.sv
+LSC_scriptv2.py is for angles normal to the surface. LSC_scriptv3.py is for incident angles of your choice. LSC_scriptv4.py allows your computer to run ray-tracing on files stored on your computer (must be organized into folders and subfolders as shown in the code) one-by-one continuously, so that you do not need to run LSC_scriptv3.py several times again and again.
 
-LSC_script.py and LSC_script_parallel_comp.py require manual input of desired input parameters in the code. LSC_script_parallel_comp uses multiprocessing to access all computing cores in a machine. Requires install of multiprocessing.
-
-GUI folder contains main.py that can be run to call a GUI (form.ui) for easier input of simulation parameters. Requires install of PySide2. Tested to work on Anaconda.
+The GUI folder is still under development and does not work well.
